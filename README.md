@@ -1,4 +1,4 @@
-# CLOPE-clusterizator
+# CLOPE clusterizator
 Implementation of clope algorithm.
  
  To run program you should specify data file and repulsion. Usage:
