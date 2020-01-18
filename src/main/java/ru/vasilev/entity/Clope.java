@@ -1,6 +1,6 @@
 package ru.vasilev.entity;
 
-import ru.vasilev.dao.IReader;
+import ru.vasilev.IO.IReader;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -69,7 +69,7 @@ public class Clope {
      * Gets delta profit for adding transaction in cluster.
      *
      * @param cluster Cluster for which the delta profit is calculated.
-     * @param t Transaction, that could be added in cluster.
+     * @param t       Transaction, that could be added in cluster.
      * @return Delta profit if transaction will be added in cluster.
      */
     private double deltaAdd(Cluster cluster, Transaction t) {
@@ -94,7 +94,7 @@ public class Clope {
      * Gets delta profit for removing transaction in cluster.
      *
      * @param cluster Cluster for which the delta profit is calculated.
-     * @param t Transaction, that could be removed in cluster.
+     * @param t       Transaction, that could be removed in cluster.
      * @return Delta profit if transaction will be removed in cluster.
      */
     private double deltaRemove(Cluster cluster, Transaction t) {
@@ -150,9 +150,9 @@ public class Clope {
     }
 
     /**
-     *  Returns a string representation of the object.
+     * Returns a string representation of the object.
      *
-     * @return  a string representation of the object.
+     * @return a string representation of the object.
      */
     @Override
     public String toString() {

@@ -58,15 +58,15 @@ public class Transaction {
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof Transaction) {
-            return ((Transaction)obj).characters.equals(characters);
+            return ((Transaction) obj).characters.equals(characters);
         }
         return false;
     }
 
     /**
-     *  Returns a string representation of the object.
+     * Returns a string representation of the object.
      *
-     * @return  a string representation of the object.
+     * @return a string representation of the object.
      */
     @Override
     public String toString() {

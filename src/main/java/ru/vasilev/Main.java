@@ -1,6 +1,6 @@
 package ru.vasilev;
 
-import ru.vasilev.dao.FileReader;
+import ru.vasilev.IO.FileReader;
 import ru.vasilev.entity.Clope;
 
 import java.io.IOException;
@@ -14,8 +14,7 @@ public class Main {
                 Clope clope = new Clope(fileReader, repulsion);
                 System.out.println(String.format("Count of clusters: %d", clope.getCountClusters()));
                 System.out.println(clope);
-            }
-            else {
+            } else {
                 System.out.println("Mandatory arguments are missing. Usage: program_name data_file repulsion");
             }
         } catch (IOException e) {
